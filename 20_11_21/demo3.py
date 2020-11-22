@@ -61,3 +61,20 @@ print(FunX(8)(5)) #闭包
 lambda y : 2 * y + 1
 g = lambda y : 2 * y + 1
 print(g(6))
+
+lambda y,z : y+z
+g = lambda y,z : y+z
+print(g(6,7))
+
+filter(None,[1,0,False,True])
+#返回非0数
+
+def odd(x):
+    return x%2
+
+temp = range(10)
+show = filter(odd,temp)
+filter(lambda x : x%2,range(10))
+print(list(filter(lambda x : x%2,range(10))))
+
+print(list(map(lambda x : x*2,range(10))))
